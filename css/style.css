@@ -124,6 +124,7 @@ h2::after {
 .nav-bar-subtitle {
   font-size: max(1.5vmin, 18px);
   color: #888;
+  font-weight: 300;
 }
 
 .nav-box {
