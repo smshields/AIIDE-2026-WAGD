@@ -12,12 +12,49 @@ document.addEventListener('DOMContentLoaded', () => {
     'yavalath.jpg'
   ];
 
+  const imageCaptions = {
+    'angelina.jpg': 'ANGELINA',
+    'brawlerAGD_teaser.png': 'BrawlerAGD',
+    'era.jpg': 'Expressive Range Analysis',
+    'galacticarmsrace.png': 'Galactic Arms Race',
+    'gameboy.png': 'Game Boy ROM Generator',
+    'vgdl.jpg': 'Video Game Description Language',
+    'wfc.png': 'WaveFunctionCollapse',
+    'yavalath.jpg': 'Yavalath, by Ludi'
+  };
+
+  let currentImageIndex = Math.floor(Math.random() * headerImages.length);
+
+  function updateHeaderImage(imgDiv, index) {
+    if (!imgDiv) return;
+    const randomY = Math.floor(Math.random() * 101);
+    const imageName = headerImages[index];
+    imgDiv.style.backgroundImage = `url('images/page_headers/${imageName}')`;
+    imgDiv.style.backgroundPosition = `center ${randomY}%`;
+    
+    const captionText = imageCaptions[imageName];
+    if (captionText) {
+      imgDiv.innerHTML = `<div class="image-caption">${captionText}</div>`;
+    } else {
+      imgDiv.innerHTML = '';
+    }
+  }
+
   function setRandomHeaderImage(pageElement) {
     const imgDiv = pageElement.querySelector('.page-header-image');
     if (imgDiv) {
-      const randomImg = headerImages[Math.floor(Math.random() * headerImages.length)];
-      imgDiv.style.backgroundImage = `url('images/page_headers/${randomImg}')`;
-      imgDiv.textContent = ''; // Remove placeholder text
+      currentImageIndex = Math.floor(Math.random() * headerImages.length);
+      updateHeaderImage(imgDiv, currentImageIndex);
+      
+      // Add click listener if not already added
+      if (!imgDiv.dataset.listenerAdded) {
+        imgDiv.addEventListener('click', () => {
+          currentImageIndex = (currentImageIndex + 1) % headerImages.length;
+          updateHeaderImage(imgDiv, currentImageIndex);
+        });
+        imgDiv.dataset.listenerAdded = 'true';
+        imgDiv.style.cursor = 'pointer';
+      }
     }
   }
 
