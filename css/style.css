@@ -26,18 +26,21 @@ a:hover {
   color: white !important;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, li {
+  line-height: 1.6;
+  color: #ccc;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
   color: white;
   font-weight: 300;
 }
 
 li {
-  line-height: 1.6;
   margin-top: 15pt;
   margin-bottom: 15pt;
-  color: white;
-  font-weight: 300;
 }
 
 hr {
@@ -84,6 +87,10 @@ hr {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .col-sidebar {
+    position: static;
+    margin-bottom: 20px;
+  }
 }
 
 h2 {
@@ -110,6 +117,23 @@ h2::after {
 
 .logo-nav-bar {
   text-align: center;
+}
+
+.page-header-image {
+  width: 90%;
+  aspect-ratio: 32 / 9;
+  background-color: #222;
+  border: 1px solid #333;
+  margin: 0 auto 2vmin auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .nav-bar-title {
@@ -176,6 +200,64 @@ h2::after {
 
 .committee-member p {
   margin-top: 0;
+}
+
+.committee-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.committee-member-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .committee-member-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.member-name-row h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.member-content-row {
+  display: flex;
+  gap: 20px;
+}
+
+.member-image-box {
+  flex: 0 0 200px;
+  height: 250px;
+  background-color: #222;
+  border: 1px solid #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 0.8em;
+}
+
+.member-details {
+  flex: 1;
+}
+
+.member-details p {
+  margin: 0 0 10px 0;
+}
+
+.member-bio {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #bbb;
 }
 
 /* Page management */

@@ -1,6 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link-text');
   const pages = document.querySelectorAll('.page');
+  const headerImages = [
+    'angelina.jpg',
+    'brawlerAGD_teaser.png',
+    'era.jpg',
+    'galacticarmsrace.png',
+    'gameboy.png',
+    'vgdl.jpg',
+    'wfc.png',
+    'yavalath.jpg'
+  ];
+
+  function setRandomHeaderImage(pageElement) {
+    const imgDiv = pageElement.querySelector('.page-header-image');
+    if (imgDiv) {
+      const randomImg = headerImages[Math.floor(Math.random() * headerImages.length)];
+      imgDiv.style.backgroundImage = `url('images/page_headers/${randomImg}')`;
+      imgDiv.textContent = ''; // Remove placeholder text
+    }
+  }
 
   function showPage(pageId) {
     // Hide all pages
@@ -12,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const targetPage = document.getElementById(pageId);
     if (targetPage) {
       targetPage.classList.add('active');
+      setRandomHeaderImage(targetPage);
     }
 
     // Update sidebar links

@@ -41,6 +41,8 @@
                     
                     <h2>WHY AGD NOW?</h2>
                     
+                    <div class="page-header-image">OVERVIEW IMAGE</div>
+                    
                     <p>Game design is increasingly becoming malleable, something that players engage with themselves, something that is procedurally generated and varied, and something that is fluid and always changing. The popularity of game-making tools like Fortnite Creative, Mario Maker, as well as the existence of popular ROM-hacking and randomizer communities has encouraged an influx of people to play with game-making, which makes the study and understanding of game design and its underlying processes more important than ever. Daily challenges and roguelike variation now often reconfigure fundamental aspects of a game’s design as it is played, making it important to build better tools to understand and predict dynamic systems with an incomprehensible number of potential outcomes. The ubiquity of live access, games-as-a-service and early access models means that even without runtime modifications, game designs are constantly in flux, which creates an opportunity for researchers to study how intelligent systems and tools can understand and support designers working in these rapidly-changing game design spaces.</p>
                     <p>Beyond this, AGD is a forward-looking, exciting blue-sky research space that aims to open up entirely new ways to play and create games. AGD carves a unique space for designers and researchers to explore how we build systems that produce surprising and diverse game artifacts. AGD lets us explore the tooling at design- and run-time that pushes the envelope of what styles of game design and player engagement are possible. AIIDE is an ideal venue for such a workshop: it has historically been a home for AGD research, forming a conversation between maximalist approaches to automated game design and more specific game AI, mixed-initiative tooling, and procedural content generation research. Hosting this workshop can help turn up the volume of this conversation.</p>
                     
@@ -135,30 +137,92 @@
                     <hr>
                     <h1 class="page-title">COMMITTEE</h1>
                     <hr>
-                    <div class="committee-member">
-                        <h3><span class="member-name">Samuel Shields</span> (Primary)</h3>
-                        <p><a href="mailto:samuel.m.shields@gmail.com">samuel.m.shields@gmail.com</a><br>
-                        Shields Games and Research LLC</p>
-                    </div>
-                    <div class="committee-member">
-                        <h3><span class="member-name">Max Kreminski</span></h3>
-                        <p><a href="mailto:mkremins@cornell.edu">mkremins@cornell.edu</a><br>
-                        Cornell Tech</p>
-                    </div>
-                    <div class="committee-member">
-                        <h3><span class="member-name">Lana Rossato</span></h3>
-                        <p><a href="mailto:lbrossato@inf.ufrgs.br">lbrossato@inf.ufrgs.br</a><br>
-                        Federal University of Rio Grande do Sul</p>
-                    </div>
-                    <div class="committee-member">
-                        <h3><span class="member-name">Michael Cook</span></h3>
-                        <p><a href="mailto:mike.cook@kcl.ac.uk">mike.cook@kcl.ac.uk</a> / <a href="mailto:mike@possibilityspace.org">mike@possibilityspace.org</a><br>
-                        King’s College London, Department of Informatics</p>
-                    </div>
-                    <div class="committee-member">
-                        <h3><span class="member-name">Rachel Heleva</span></h3>
-                        <p><a href="mailto:rlheleva@ucdavis.org">rlheleva@ucdavis.org</a><br>
-                        University of California, Davis; The Museum of Art and Digital Entertainment</p>
+                    
+                    <div class="committee-grid">
+                        <!-- Samuel Shields -->
+                        <div class="committee-member-card">
+                            <div class="member-name-row">
+                                <h3><span class="member-name">Samuel Shields</span> (Primary)</h3>
+                            </div>
+                            <div class="member-content-row">
+                                <div class="member-image-box">
+                                    <img src="images/sam.jpg" alt="Samuel Shields" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-details">
+                                    <p><a href="mailto:samuel.m.shields@gmail.com">samuel.m.shields@gmail.com</a></p>
+                                    <p>IDEO; Shields Games and Research LLC</p>
+                                    <p class="member-bio"><a href="https://smshields.com" target="_blank">Sam Shields</a> is a Game Design Research Lead at IDEO and a recent PhD graduate from UCSC’s Computational Media department. Sam’s passions lie in understanding, designing, and implementing interlocking game systems that are expressive and surprising. He’s deeply curious about investigating “metadesign” (how we design design systems) for games. Some of his relevant prior work involves generating fighting games while tuning their properties to be competitively balanced (BrawlerAGD) and having an AI director try and tune a turn-based RPG for different audiences (FighterDDA). He’s an Esper mage and is currently going through a ska phase.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Max Kreminski -->
+                        <div class="committee-member-card">
+                            <div class="member-name-row">
+                                <h3><span class="member-name">Max Kreminski</span></h3>
+                            </div>
+                            <div class="member-content-row">
+                                <div class="member-image-box">
+                                    <img src="images/max.jpeg" alt="Max Kreminski" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-details">
+                                    <p><a href="mailto:mkremins@cornell.edu">mkremins@cornell.edu</a></p>
+                                    <p>Cornell Tech</p>
+                                    <p class="member-bio"><a href="https://mkremins.github.io/" target="_blank">Max Kreminski</a> is a creativity support tools researcher and assistant professor of Design Tech at Cornell Tech, making interactive software systems that enable new forms of playful exploration in creative domains. Their AGD work has focused on human-AI interaction design (Germinate); incorporating narrative into AGD (StoryAssembler, GBS); and authoring support for open-ended interactive stories (Dramamancer, Elsewise, Bonsai). Although conceptually skeptical of games and automation, Max is nevertheless a big fan of design..</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lana Rossato -->
+                        <div class="committee-member-card">
+                            <div class="member-name-row">
+                                <h3><span class="member-name">Lana Rossato</span></h3>
+                            </div>
+                            <div class="member-content-row">
+                                <div class="member-image-box">
+                                    <img src="images/lana.jpg" alt="Lana Rossato" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-details">
+                                    <p><a href="mailto:lbrossato@inf.ufrgs.br">lbrossato@inf.ufrgs.br</a></p>
+                                    <p>Federal University of Rio Grande do Sul</p>
+                                    <p class="member-bio">Lana Rossato is a PhD student in Computer Science at the Federal University of Rio Grande do Sul (UFRGS), Brazil. Her research focuses on Artificial Intelligence for Games, particularly Automatic Game Design, Procedural Content Generation, and Computational Creativity. She is interested in developing systems capable of generating, evaluating, and adapting games autonomously, with an emphasis on symbolic AI techniques.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Michael Cook -->
+                        <div class="committee-member-card">
+                            <div class="member-name-row">
+                                <h3><span class="member-name">Michael Cook</span></h3>
+                            </div>
+                            <div class="member-content-row">
+                                <div class="member-image-box">
+                                    <img src="images/mike.PNG" alt="Michael Cook" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-details">
+                                    <p><a href="mailto:mike.cook@kcl.ac.uk">mike.cook@kcl.ac.uk</a> / <a href="mailto:mike@possibilityspace.org">mike@possibilityspace.org</a></p>
+                                    <p>King’s College London, Department of Informatics</p>
+                                    <p class="member-bio">Mike Cook is an AI researcher and game designer, currently working as a Senior Lecturer at King's College London. He is the designer of the AGD systems ANGELINA and Puck, and the founder of PROCJAM, the Procedural Generation Jam. He was very briefly a world record speedrunner for a game about flipping coins.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rachel Heleva -->
+                        <div class="committee-member-card">
+                            <div class="member-name-row">
+                                <h3><span class="member-name">Rachel Heleva</span></h3>
+                            </div>
+                            <div class="member-content-row">
+                                <div class="member-image-box">
+                                    <img src="images/rachel.png" alt="Rachel Heleva" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="member-details">
+                                    <p><a href="mailto:rlheleva@ucdavis.org">rlheleva@ucdavis.org</a></p>
+                                    <p>University of California, Davis; The Museum of Art and Digital Entertainment</p>
+                                    <p class="member-bio">Rachel Heleva is a PhD student in Performance Studies at UC Davis and a member of the Social Intelligence and Narrative in Games Lab. Her research focuses on computational poetics and AI systems for storytelling and interpretation, especially playable systems that use rules, constraints, and variation to make interpretive reasoning part of play. She is also the Executive Director of the Museum of Art and Digital Entertainment in Oakland where she leads public work in access to game design education and AI literacy.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
