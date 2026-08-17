@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WAGD - Workshop on Automated Game Design</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta name="description" content="The Workshop on Automated Game Design (WAGD) at AIIDE 2026 — advancing the conversation and state-of-the-art in automated game design.">
+    <link rel="icon" type="image/svg+xml" href="images/wagd-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300..700&family=Source+Sans+3:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,104 +17,175 @@
             <!-- Sidebar -->
             <div class="col-sidebar">
                 <div class="logo-nav-bar">
-                    <hr class="d-none d-lg-block">
-                    <a href="#overview" class="nav-link-text" data-page="overview">
-                        <div class="nav-bar-title">Workshop on Automated Game Design</div>
-                        <div class="nav-bar-subtitle">( WAGD )</div>
+                    <a href="#overview" class="nav-logo" data-page="overview" aria-label="WAGD home">
+                        <img src="images/wagd-logo.svg" alt="WAGD logo: keyboard keys spelling W, A, G, D">
                     </a>
-                    <hr>
-                    <div class="nav-box">
-                        <a href="#overview" class="nav-link-text" data-page="overview">OVERVIEW</a>
-                        <a href="#schedule" class="nav-link-text" data-page="schedule">SCHEDULE</a>
-                        <a href="#call-for-papers" class="nav-link-text" data-page="call-for-papers">CALL FOR PAPERS</a>
-                        <a href="#committee" class="nav-link-text" data-page="committee">COMMITTEE</a>
-                    </div>
-                    <hr>
+                    <a href="#overview" class="nav-title-link" data-page="overview">
+                        <div class="nav-bar-title">Workshop on Automated Game Design</div>
+                        <div class="nav-bar-subtitle">AIIDE 2026</div>
+                    </a>
+                    <nav class="nav-box" aria-label="Main navigation">
+                        <a href="#overview" class="nav-link-text" data-page="overview">Overview</a>
+                        <a href="#schedule" class="nav-link-text" data-page="schedule">Schedule</a>
+                        <a href="#keynote" class="nav-link-text" data-page="keynote">Keynote Speakers</a>
+                        <a href="#call-for-papers" class="nav-link-text" data-page="call-for-papers">Call for Papers</a>
+                        <a href="#committee" class="nav-link-text" data-page="committee">Committee</a>
+                    </nav>
                 </div>
             </div>
 
             <!-- Content Area -->
             <div class="col-content">
-                
+
                 <!-- Overview Page -->
                 <div id="overview" class="page">
-                    <hr>
-                    <h1 class="page-title">WORKSHOP ON AUTOMATED GAME DESIGN (WAGD)</h1>
-                    <hr>
-                    <p><strong><span style="font-size: 1.1em;">The goal of the Workshop on Automated Game Design (WAGD) is to provide a home for advancing the conversation and state-of-the-art in automated game design (AGD).</span></strong></p>
-                    
-                    <h2>WHY AGD NOW?</h2>
-                    
-                    <div class="page-header-image">OVERVIEW IMAGE</div>
-                    
-                    <p>Game design is increasingly becoming malleable, something that players engage with themselves, something that is procedurally generated and varied, and something that is fluid and always changing. The popularity of game-making tools like Fortnite Creative, Mario Maker, as well as the existence of popular ROM-hacking and randomizer communities has encouraged an influx of people to play with game-making, which makes the study and understanding of game design and its underlying processes more important than ever. Daily challenges and roguelike variation now often reconfigure fundamental aspects of a game’s design as it is played, making it important to build better tools to understand and predict dynamic systems with an incomprehensible number of potential outcomes. The ubiquity of live access, games-as-a-service and early access models means that even without runtime modifications, game designs are constantly in flux, which creates an opportunity for researchers to study how intelligent systems and tools can understand and support designers working in these rapidly-changing game design spaces.</p>
-                    <p>Beyond this, AGD is a forward-looking, exciting blue-sky research space that aims to open up entirely new ways to play and create games. AGD carves a unique space for designers and researchers to explore how we build systems that produce surprising and diverse game artifacts. AGD lets us explore the tooling at design- and run-time that pushes the envelope of what styles of game design and player engagement are possible. AIIDE is an ideal venue for such a workshop: it has historically been a home for AGD research, forming a conversation between maximalist approaches to automated game design and more specific game AI, mixed-initiative tooling, and procedural content generation research. Hosting this workshop can help turn up the volume of this conversation.</p>
-                    
-                    <h2>GET INVOLVED</h2>
+                    <h1 class="page-title">Workshop on Automated Game Design</h1>
+                    <p class="page-subtitle">November 9&ndash;10, 2026 &middot; Co-located with AIIDE 2026</p>
 
-                    <p>We are now accepting submissions for publication and presentation! Interested in joining, but not interested in submitting a paper? You are still welcome! Between paper presentations and collaborative design sessions, there is still a lot to offer. If you would like to attend, please register at the <a href="https://sites.google.com/view/aiide2026/home" target="_blank">AIIDE 2026 website</a>. In person attendance is required for workshop participation.</p>
-                    <p>Please submit any questions to <a href="mailto:samuel.m.shields@gmail.com">samuel.m.shields@gmail.com</a>.</p>
+                    <div class="lead-callout">
+                        <p>The goal of the Workshop on Automated Game Design (WAGD) is to provide a home for advancing the conversation and state-of-the-art in automated game design (AGD).</p>
+                    </div>
+
+                    <h2>Why AGD Now?</h2>
+
+                    <div class="page-header-image" title="Click to see another AGD system">OVERVIEW IMAGE</div>
+
+                    <p>Game design is increasingly becoming <strong>malleable</strong> — something that players engage with themselves, something that is procedurally generated and varied, and something that is fluid and always changing. The popularity of game-making tools like Fortnite Creative and Mario Maker, as well as the existence of popular ROM-hacking and randomizer communities, has encouraged an influx of people to play with game-making, which makes the study and understanding of game design and its underlying processes more important than ever. Daily challenges and roguelike variation now often reconfigure fundamental aspects of a game&rsquo;s design as it is played, making it important to build better tools to understand and predict dynamic systems with an incomprehensible number of potential outcomes. The ubiquity of live access, games-as-a-service, and early access models means that even without runtime modifications, game designs are constantly in flux — creating an opportunity for researchers to study how intelligent systems and tools can understand and support designers working in these rapidly-changing game design spaces.</p>
+                    <p>Beyond this, AGD is a forward-looking, exciting <strong>blue-sky research space</strong> that aims to open up entirely new ways to play and create games. AGD carves a unique space for designers and researchers to explore how we build systems that produce surprising and diverse game artifacts. AGD lets us explore the tooling at design- and run-time that pushes the envelope of what styles of game design and player engagement are possible. AIIDE is an ideal venue for such a workshop: it has historically been a home for AGD research, forming a conversation between maximalist approaches to automated game design and more specific game AI, mixed-initiative tooling, and procedural content generation research. Hosting this workshop can help turn up the volume of this conversation.</p>
+
+                    <h2>Get Involved</h2>
+
+                    <p>We are now accepting submissions for publication and presentation! Interested in joining, but not interested in submitting a paper? <strong>You are still welcome!</strong> Between paper presentations and collaborative design sessions, there is still a lot to offer. In-person attendance is required for workshop participation.</p>
+                    <div class="btn-row">
+                        <a href="https://sites.google.com/view/aiide2026/home" target="_blank" class="btn">Register at AIIDE 2026</a>
+                        <a href="#call-for-papers" data-page="call-for-papers" class="btn btn-secondary">Read the Call for Papers</a>
+                    </div>
+                    <p>Please send any questions to <a href="mailto:samuel.m.shields@gmail.com">samuel.m.shields@gmail.com</a>.</p>
                 </div>
 
                 <!-- Schedule Page -->
                 <div id="schedule" class="page">
-                    <hr>
-                    <h1 class="page-title">SCHEDULE</h1>
-                    <hr>
-                    <p>We plan on having three major sections to the workshop over two days (Monday, November 9th, and Tuesday, November 10th):</p>
-                    <ul>
-                        <li>Keynote Address</li>
-                        <li>Paper Presentations</li>
-                        <li>Collaborative Demo/Jam Session</li>
+                    <h1 class="page-title">Schedule</h1>
+                    <p class="page-subtitle">Monday, November 9th &amp; Tuesday, November 10th, 2026</p>
+
+                    <p>We plan on having three major sections to the workshop over two days:</p>
+                    <ul class="schedule-list">
+                        <li>
+                            <span class="schedule-item-title">Keynote Address</span>
+                            <span class="schedule-item-desc">An invited talk from a leader in the field — see <a href="#keynote" data-page="keynote">Keynote Speakers</a>.</span>
+                        </li>
+                        <li>
+                            <span class="schedule-item-title">Paper Presentations</span>
+                            <span class="schedule-item-desc">Presentations of accepted peer-reviewed work.</span>
+                        </li>
+                        <li>
+                            <span class="schedule-item-title">Collaborative Demo/Jam Session</span>
+                            <span class="schedule-item-desc">Hands-on, collaborative design and demo time.</span>
+                        </li>
                     </ul>
                     <p>Stay tuned for specifics closer to the workshop!</p>
                 </div>
 
+                <!-- Keynote Page -->
+                <div id="keynote" class="page">
+                    <h1 class="page-title">Keynote Speakers</h1>
+                    <p class="page-subtitle">Invited talks at WAGD 2026</p>
+
+                    <div class="panel keynote-tba">
+                        <div class="tba-keys"><img src="images/wagd-logo.svg" alt=""></div>
+                        <h3>To Be Announced</h3>
+                        <p>We are finalizing our keynote lineup now. Check back soon — speaker announcements are coming shortly!</p>
+                    </div>
+
+                    <!-- Speaker card template: copy, un-comment, and fill in when speakers are confirmed.
+                    <div class="committee-grid">
+                        <div class="committee-member-card">
+                            <div class="member-name-row">
+                                <h3><span class="member-name">Speaker Name</span></h3>
+                            </div>
+                            <div class="member-content-row">
+                                <div class="member-image-box">
+                                    <img src="images/speaker.jpg" alt="Speaker Name">
+                                </div>
+                                <div class="member-details">
+                                    <p class="member-affiliation">Affiliation</p>
+                                    <p><strong>Talk:</strong> Talk Title</p>
+                                    <p class="member-bio">Speaker bio goes here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+
                 <!-- Call for Papers Page -->
                 <div id="call-for-papers" class="page">
-                    <hr>
-                    <h1 class="page-title">CALL FOR PAPERS</h1>
-                    <hr>
-                    <h2>Submitting Your Work:</h2>
-                    <p>We plan on having accepted peer-reviewed papers published in CEUR-WS. As such, submissions follow the length guidelines of CEUR-WS (5-9 pages for short papers, 10 or more for full, references and appendices included) and can be anything related to the field of AGD. This includes theory and vision papers, lofi/hifi prototype descriptions, and evaluations of AGD systems. We encourage maximalist approaches; AGD systems often sum many disparate pieces together. Don’t be afraid to be messy or over-scoped. Papers focused on large pretrained generative models are discouraged due to cost barriers, replicability concerns, and sufficient existing coverage at other venues. We will review artifact evaluations alongside traditional papers.</p>
-                    <p>LaTeX, Overleaf, and other templates for authoring can be found below. All papers must use one of the following templates:</p>
+                    <h1 class="page-title">Call for Papers</h1>
+                    <p class="page-subtitle">Submission deadline: September 18th, 2026 (AoE)</p>
+
+                    <h2>Submitting Your Work</h2>
+                    <p>We plan on having accepted peer-reviewed papers published in <strong>CEUR-WS</strong>. As such, submissions follow the length guidelines of CEUR-WS (<strong>5&ndash;9 pages for short papers, 10 or more for full</strong>, references and appendices included) and can be anything related to the field of AGD. This includes theory and vision papers, lofi/hifi prototype descriptions, and evaluations of AGD systems. We encourage maximalist approaches; AGD systems often sum many disparate pieces together. <strong>Don&rsquo;t be afraid to be messy or over-scoped.</strong> Papers focused on large pretrained generative models are discouraged due to cost barriers, replicability concerns, and sufficient existing coverage at other venues. We will review artifact evaluations alongside traditional papers.</p>
+                    <p>All papers must use one of the following templates:</p>
                     <ul>
-                        <li><a href="http://ceur-ws.org/Vol-XXX/CEURART.zip" target="_blank">CEURART.zip</a></li>
+                        <li><a href="http://ceur-ws.org/Vol-XXX/CEURART.zip" target="_blank">CEURART.zip</a> (LaTeX template)</li>
                         <li><a href="https://www.overleaf.com/latex/templates/template-for-submissions-to-ceur-workshop-proceedings-ceur-ws-dot-org/hpvjjzhjxzjk" target="_blank">Overleaf Template</a></li>
                     </ul>
-                    <p>All submissions will be peer reviewed. Works will be judged on their technical and research contributions, accessibility, replicability, and impact. All accepted works will be published in the CEUR-WS proceedings for WAGD 2026. Submissions should be made through Easychair.</p>
-                    <p>Submissions can be made at <a href="https://easychair.org/conferences/?conf=aiide26" target="_blank">Easychair (Automated Game Design 2026 track)</a>.</p>
-                    <p>Interested in coming to the workshop but don’t have a submission? Want feedback on a demo, or want to ideate on a new system? Register anyways! All are welcome to come and learn more about AGD.</p>
-                    
-                    <h2>Examples of Relevant Topics:</h2>
+                    <p>All submissions will be peer reviewed. Works will be judged on their technical and research contributions, accessibility, replicability, and impact. All accepted works will be published in the CEUR-WS proceedings for WAGD 2026. Submissions should be made through EasyChair, under the <strong>Automated Game Design 2026</strong> track.</p>
+                    <div class="btn-row">
+                        <a href="https://easychair.org/conferences/?conf=aiide26" target="_blank" class="btn">Submit on EasyChair</a>
+                    </div>
+                    <p>Interested in coming to the workshop but don&rsquo;t have a submission? Want feedback on a demo, or want to ideate on a new system? Register anyway! All are welcome to come and learn more about AGD.</p>
+
+                    <h2>Examples of Relevant Topics</h2>
                     <p>Below is a (non-exhaustive) list of topics we are looking for:</p>
                     <ul>
-                        <li>Languages and formalisms for describing game design spaces. See VGDL (<a href="https://drops.dagstuhl.de/entities/document/10.4230/DFU.Vol6.12191.85" target="_blank">Ebner et al., 2013</a>) or Cygnus (<a href="https://eis.ucsc.edu/papers/mechanicsToMeaning.pdf" target="_blank">Summerville et al., 2017</a>).</li>
-                        <li>Automated systems that design physical or digital games. See Ludi (<a href="https://www.researchgate.net/publication/27476077_Automatic_generation_and_evaluation_of_recombination_games" target="_blank">Browne, 2008</a>) or ANGELINA (<a href="https://ieeexplore.ieee.org/document/7429751" target="_blank">Cook, Colton and Gow, 2016</a>).</li>
-                        <li>Approaches for evaluating unseen games or spaces of games. Includes evaluating large design spaces for playability, balance, or emergence. See Expressive Range Analysis (<a href="https://www.researchgate.net/publication/228411962_Analyzing_the_expressive_range_of_a_level_generator" target="_blank">Smith and Whitehead, 2010</a>).</li>
-                        <li>Mixed-initiative approaches to automated game design. See Tanagra (<a href="https://www.researchgate.net/publication/228339816_Tanagra_A_mixed-initiative_level_design_tool" target="_blank">Smith, Whitehead, and Mateas, 2010</a>) or Sentient Sketchbook (<a href="https://yannakakis.net/wp-content/uploads/2013/08/ALiapis_SentientSketchbook.pdf" target="_blank">Liapis, Yannakakis, and Togelius, 2013</a>).</li>
-                        <li>Studies or surveys of automated game design or similar works in commercial games. See Mosa Lina (<a href="https://store.steampowered.com/app/2477090/Mosa_Lina/" target="_blank">Steele, 2023</a>) or Caves of Qud (<a href="https://www.cavesofqud.com/" target="_blank">Freehold Games, 2024</a>) as example games to analyze.</li>
-                        <li>Novel methods or combinations of methods for automated game design. See WaveFunctionCollapse (<a href="https://www.researchgate.net/publication/319370604_WaveFunctionCollapse_is_constraint_solving_in_the_wild" target="_blank">Karth and Smith, 2017</a>).</li>
-                        <li>Automated generation of game mechanics, rules, or progression systems. See Zook and Riedl’s work on RPG and Platformer games (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/8788" target="_blank">Zook and Riedl, 2014</a>)</li>
-                        <li>Self-modifying game systems that change over time, either through engagement with players, a larger metagame, or story progression. See Galactic Arms Race (<a href="https://ieeexplore.ieee.org/document/5352259" target="_blank">Hastings, Guha, and Stanley, 2009</a>).</li>
-                        <li>Systems that generate games scoped within a single platform or genre. See Karth et. al’s work on Game Boy RPGs (<a href="https://www.researchgate.net/publication/353971774_Generating_Playable_RPG_ROMs_for_the_Game_Boy" target="_blank">Karth et al., 2021</a>), or BrawlerAGD (<a href="https://ojs.aaai.org/index.php/AIIDE/article/view/21963" target="_blank">Shields et al., 2022</a>).</li>
-                        <li>Approaches to the orchestration of multiple distinct creative facets or modalities. See Liapis et al.’s work defining orchestration as a central challenge for AGD research (<a href="https://antoniosliapis.com/papers/orchestrating_game_generation.pdf" target="_blank">Liapis et. al, 2019</a>).</li>
-                        <li>Code-level AGD: synthesizing human-readable and human-editable code (within the context of an existing codebase) as an AGD approach. See Butler et al.’s work on program synthesis for boss behavior generation (<a href="https://www.semanticscholar.org/paper/Program-synthesis-as-a-generative-method-Butler-Siu/3c7485ceacebaae0d086f8ae7149eb82732ac0ad" target="_blank">Butler, Siu, and Zook, 2017</a>) and Cook’s work on AGD-friendly software design patterns (<a href="https://arxiv.org/abs/2004.01770" target="_blank">Cook, 2020</a>).</li>
-                        <li>Techniques for inventing good game goals. See Davidson et al.’s work on searching for human-like goals in open-ended play environments (<a href="https://guydavidson.me/files/goals_as_programs.pdf" target="_blank">Davidson et al., 2025</a>).</li>
+                        <li><strong>Languages and formalisms</strong> for describing game design spaces. See VGDL (<a href="https://drops.dagstuhl.de/entities/document/10.4230/DFU.Vol6.12191.85" target="_blank">Ebner et al., 2013</a>) or Cygnus (<a href="https://eis.ucsc.edu/papers/mechanicsToMeaning.pdf" target="_blank">Summerville et al., 2017</a>).</li>
+                        <li><strong>Automated systems that design physical or digital games.</strong> See Ludi (<a href="https://www.researchgate.net/publication/27476077_Automatic_generation_and_evaluation_of_recombination_games" target="_blank">Browne, 2008</a>) or ANGELINA (<a href="https://ieeexplore.ieee.org/document/7429751" target="_blank">Cook, Colton and Gow, 2016</a>).</li>
+                        <li><strong>Approaches for evaluating unseen games or spaces of games.</strong> Includes evaluating large design spaces for playability, balance, or emergence. See Expressive Range Analysis (<a href="https://www.researchgate.net/publication/228411962_Analyzing_the_expressive_range_of_a_level_generator" target="_blank">Smith and Whitehead, 2010</a>).</li>
+                        <li><strong>Mixed-initiative approaches</strong> to automated game design. See Tanagra (<a href="https://www.researchgate.net/publication/228339816_Tanagra_A_mixed-initiative_level_design_tool" target="_blank">Smith, Whitehead, and Mateas, 2010</a>) or Sentient Sketchbook (<a href="https://yannakakis.net/wp-content/uploads/2013/08/ALiapis_SentientSketchbook.pdf" target="_blank">Liapis, Yannakakis, and Togelius, 2013</a>).</li>
+                        <li><strong>Studies or surveys</strong> of automated game design or similar works in commercial games. See Mosa Lina (<a href="https://store.steampowered.com/app/2477090/Mosa_Lina/" target="_blank">Steele, 2023</a>) or Caves of Qud (<a href="https://www.cavesofqud.com/" target="_blank">Freehold Games, 2024</a>) as example games to analyze.</li>
+                        <li><strong>Novel methods or combinations of methods</strong> for automated game design. See WaveFunctionCollapse (<a href="https://www.researchgate.net/publication/319370604_WaveFunctionCollapse_is_constraint_solving_in_the_wild" target="_blank">Karth and Smith, 2017</a>).</li>
+                        <li><strong>Automated generation of game mechanics, rules, or progression systems.</strong> See Zook and Riedl&rsquo;s work on RPG and Platformer games (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/8788" target="_blank">Zook and Riedl, 2014</a>).</li>
+                        <li><strong>Self-modifying game systems</strong> that change over time, either through engagement with players, a larger metagame, or story progression. See Galactic Arms Race (<a href="https://ieeexplore.ieee.org/document/5352259" target="_blank">Hastings, Guha, and Stanley, 2009</a>).</li>
+                        <li><strong>Systems that generate games scoped within a single platform or genre.</strong> See Karth et al.&rsquo;s work on Game Boy RPGs (<a href="https://www.researchgate.net/publication/353971774_Generating_Playable_RPG_ROMs_for_the_Game_Boy" target="_blank">Karth et al., 2021</a>), or BrawlerAGD (<a href="https://ojs.aaai.org/index.php/AIIDE/article/view/21963" target="_blank">Shields et al., 2022</a>).</li>
+                        <li><strong>Orchestration of multiple distinct creative facets or modalities.</strong> See Liapis et al.&rsquo;s work defining orchestration as a central challenge for AGD research (<a href="https://antoniosliapis.com/papers/orchestrating_game_generation.pdf" target="_blank">Liapis et al., 2019</a>).</li>
+                        <li><strong>Code-level AGD:</strong> synthesizing human-readable and human-editable code (within the context of an existing codebase) as an AGD approach. See Butler et al.&rsquo;s work on program synthesis for boss behavior generation (<a href="https://www.semanticscholar.org/paper/Program-synthesis-as-a-generative-method-Butler-Siu/3c7485ceacebaae0d086f8ae7149eb82732ac0ad" target="_blank">Butler, Siu, and Zook, 2017</a>) and Cook&rsquo;s work on AGD-friendly software design patterns (<a href="https://arxiv.org/abs/2004.01770" target="_blank">Cook, 2020</a>).</li>
+                        <li><strong>Techniques for inventing good game goals.</strong> See Davidson et al.&rsquo;s work on searching for human-like goals in open-ended play environments (<a href="https://guydavidson.me/files/goals_as_programs.pdf" target="_blank">Davidson et al., 2025</a>).</li>
                     </ul>
 
-                    <h2>Key Dates:</h2>
-                    <p>All deadlines are at 11:59 AOE (anywhere on Earth).</p>
-                    <ul>
-                        <li><strong>Submissions Open:</strong> June 18th, 2026</li>
-                        <li><strong>Submission Deadline:</strong> September 18th, 2026</li>
-                        <li><strong>Review Deadline:</strong> September 25th, 2026</li>
-                        <li><strong>Submission Notifications:</strong> October 2nd, 2026</li>
-                        <li><strong>Publication-Ready Submission Due:</strong> October 16th, 2026</li>
-                    </ul>
-                    <p>Questions on submissions, want guidance, or not sure if you’re a fit? Send an email to <a href="mailto:samuel.m.shields@gmail.com">samuel.m.shields@gmail.com</a>.</p>
+                    <h2>Key Dates</h2>
+                    <table class="dates-table">
+                        <tbody>
+                            <tr>
+                                <td>Submissions Open</td>
+                                <td>June 18th, 2026</td>
+                            </tr>
+                            <tr class="date-highlight">
+                                <td>Submission Deadline</td>
+                                <td>September 18th, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>Review Deadline</td>
+                                <td>September 25th, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>Submission Notifications</td>
+                                <td>October 2nd, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>Publication-Ready Submission Due</td>
+                                <td>October 16th, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>Workshop</td>
+                                <td>November 9th&ndash;10th, 2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="dates-note">All deadlines are at 11:59 PM AoE (Anywhere on Earth).</p>
+                    <p>Questions on submissions, want guidance, or not sure if you&rsquo;re a fit? Send an email to <a href="mailto:samuel.m.shields@gmail.com">samuel.m.shields@gmail.com</a>.</p>
 
-                    <h2>REFERENCES</h2>
+                    <h2>References</h2>
                     <ul class="references-list">
                         <li class="reference-item">Browne, C. B. (2008). Automatic generation and evaluation of recombination games (Doctoral dissertation, Queensland University of Technology). [<a href="https://www.researchgate.net/publication/27476077_Automatic_generation_and_evaluation_of_recombination_games" target="_blank">LINK</a>]</li>
                         <li class="reference-item">Butler, E., Siu, K., & Zook, A. (2017, August). Program synthesis as a generative method. In Proceedings of the 12th International Conference on the Foundations of Digital Games (pp. 1-10). [<a href="https://www.semanticscholar.org/paper/Program-synthesis-as-a-generative-method-Butler-Siu/3c7485ceacebaae0d086f8ae7149eb82732ac0ad" target="_blank">LINK</a>]</li>
@@ -134,10 +209,9 @@
 
                 <!-- Committee Page -->
                 <div id="committee" class="page">
-                    <hr>
-                    <h1 class="page-title">COMMITTEE</h1>
-                    <hr>
-                    
+                    <h1 class="page-title">Committee</h1>
+                    <p class="page-subtitle">The WAGD 2026 organizing committee</p>
+
                     <div class="committee-grid">
                         <!-- Samuel Shields -->
                         <div class="committee-member-card">
@@ -146,12 +220,12 @@
                             </div>
                             <div class="member-content-row">
                                 <div class="member-image-box">
-                                    <img src="images/sam.jpg" alt="Samuel Shields" style="width: 100%; height: 100%; object-fit: cover;">
+                                    <img src="images/sam.jpg" alt="Samuel Shields">
                                 </div>
                                 <div class="member-details">
+                                    <p class="member-affiliation">IDEO; Shields Games and Research LLC</p>
                                     <p><a href="mailto:samuel.m.shields@gmail.com">samuel.m.shields@gmail.com</a></p>
-                                    <p>IDEO; Shields Games and Research LLC</p>
-                                    <p class="member-bio"><a href="https://smshields.com" target="_blank">Sam Shields</a> is a Game Design Research Lead at IDEO and a recent PhD graduate from UCSC’s Computational Media department. Sam’s passions lie in understanding, designing, and implementing interlocking game systems that are expressive and surprising. He’s deeply curious about investigating “metadesign” (how we design design systems) for games. Some of his relevant prior work involves generating fighting games while tuning their properties to be competitively balanced (BrawlerAGD) and having an AI director try and tune a turn-based RPG for different audiences (FighterDDA). He’s an Esper mage and is currently going through a ska phase.</p>
+                                    <p class="member-bio"><a href="https://smshields.com" target="_blank">Sam Shields</a> is a Game Design Research Lead at IDEO and a recent PhD graduate from UCSC&rsquo;s Computational Media department. Sam&rsquo;s passions lie in understanding, designing, and implementing interlocking game systems that are expressive and surprising. He&rsquo;s deeply curious about investigating &ldquo;metadesign&rdquo; (how we design design systems) for games. Some of his relevant prior work involves generating fighting games while tuning their properties to be competitively balanced (BrawlerAGD) and having an AI director try and tune a turn-based RPG for different audiences (FighterDDA). He&rsquo;s an Esper mage and is currently going through a ska phase.</p>
                                 </div>
                             </div>
                         </div>
@@ -163,12 +237,12 @@
                             </div>
                             <div class="member-content-row">
                                 <div class="member-image-box">
-                                    <img src="images/max.jpeg" alt="Max Kreminski" style="width: 100%; height: 100%; object-fit: cover;">
+                                    <img src="images/max.jpeg" alt="Max Kreminski">
                                 </div>
                                 <div class="member-details">
+                                    <p class="member-affiliation">Cornell Tech</p>
                                     <p><a href="mailto:mkremins@cornell.edu">mkremins@cornell.edu</a></p>
-                                    <p>Cornell Tech</p>
-                                    <p class="member-bio"><a href="https://mkremins.github.io/" target="_blank">Max Kreminski</a> is a creativity support tools researcher and assistant professor of Design Tech at Cornell Tech, making interactive software systems that enable new forms of playful exploration in creative domains. Their AGD work has focused on human-AI interaction design (Germinate); incorporating narrative into AGD (StoryAssembler, GBS); and authoring support for open-ended interactive stories (Dramamancer, Elsewise, Bonsai). Although conceptually skeptical of games and automation, Max is nevertheless a big fan of design..</p>
+                                    <p class="member-bio"><a href="https://mkremins.github.io/" target="_blank">Max Kreminski</a> is a creativity support tools researcher and assistant professor of Design Tech at Cornell Tech, making interactive software systems that enable new forms of playful exploration in creative domains. Their AGD work has focused on human-AI interaction design (Germinate); incorporating narrative into AGD (StoryAssembler, GBS); and authoring support for open-ended interactive stories (Dramamancer, Elsewise, Bonsai). Although conceptually skeptical of games and automation, Max is nevertheless a big fan of design.</p>
                                 </div>
                             </div>
                         </div>
@@ -180,11 +254,11 @@
                             </div>
                             <div class="member-content-row">
                                 <div class="member-image-box">
-                                    <img src="images/lana.jpg" alt="Lana Rossato" style="width: 100%; height: 100%; object-fit: cover;">
+                                    <img src="images/lana.jpg" alt="Lana Rossato">
                                 </div>
                                 <div class="member-details">
+                                    <p class="member-affiliation">Federal University of Rio Grande do Sul</p>
                                     <p><a href="mailto:lbrossato@inf.ufrgs.br">lbrossato@inf.ufrgs.br</a></p>
-                                    <p>Federal University of Rio Grande do Sul</p>
                                     <p class="member-bio">Lana Rossato is a PhD student in Computer Science at the Federal University of Rio Grande do Sul (UFRGS), Brazil. Her research focuses on Artificial Intelligence for Games, particularly Automatic Game Design, Procedural Content Generation, and Computational Creativity. She is interested in developing systems capable of generating, evaluating, and adapting games autonomously, with an emphasis on symbolic AI techniques.</p>
                                 </div>
                             </div>
@@ -197,11 +271,11 @@
                             </div>
                             <div class="member-content-row">
                                 <div class="member-image-box">
-                                    <img src="images/mike.PNG" alt="Michael Cook" style="width: 100%; height: 100%; object-fit: cover;">
+                                    <img src="images/mike.PNG" alt="Michael Cook">
                                 </div>
                                 <div class="member-details">
+                                    <p class="member-affiliation">King&rsquo;s College London, Department of Informatics</p>
                                     <p><a href="mailto:mike.cook@kcl.ac.uk">mike.cook@kcl.ac.uk</a> / <a href="mailto:mike@possibilityspace.org">mike@possibilityspace.org</a></p>
-                                    <p>King’s College London, Department of Informatics</p>
                                     <p class="member-bio">Mike Cook is an AI researcher and game designer, currently working as a Senior Lecturer at King's College London. He is the designer of the AGD systems ANGELINA and Puck, and the founder of PROCJAM, the Procedural Generation Jam. He was very briefly a world record speedrunner for a game about flipping coins.</p>
                                 </div>
                             </div>
@@ -214,11 +288,11 @@
                             </div>
                             <div class="member-content-row">
                                 <div class="member-image-box">
-                                    <img src="images/rachel.png" alt="Rachel Heleva" style="width: 100%; height: 100%; object-fit: cover;">
+                                    <img src="images/rachel.png" alt="Rachel Heleva">
                                 </div>
                                 <div class="member-details">
+                                    <p class="member-affiliation">University of California, Davis; The Museum of Art and Digital Entertainment</p>
                                     <p><a href="mailto:rlheleva@ucdavis.org">rlheleva@ucdavis.org</a></p>
-                                    <p>University of California, Davis; The Museum of Art and Digital Entertainment</p>
                                     <p class="member-bio">Rachel Heleva is a PhD student in Performance Studies at UC Davis and a member of the Social Intelligence and Narrative in Games Lab. Her research focuses on computational poetics and AI systems for storytelling and interpretation, especially playable systems that use rules, constraints, and variation to make interpretive reasoning part of play. She is also the Executive Director of the Museum of Art and Digital Entertainment in Oakland where she leads public work in access to game design education and AI literacy.</p>
                                 </div>
                             </div>
@@ -229,6 +303,45 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="images/wagd-logo.svg" alt="WAGD logo">
+                <p>The Workshop on Automated Game Design (WAGD) — advancing the conversation and state-of-the-art in automated game design, at AIIDE 2026.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Workshop</h4>
+                <ul>
+                    <li><a href="#overview" data-page="overview">Overview</a></li>
+                    <li><a href="#schedule" data-page="schedule">Schedule</a></li>
+                    <li><a href="#keynote" data-page="keynote">Keynote Speakers</a></li>
+                    <li><a href="#call-for-papers" data-page="call-for-papers">Call for Papers</a></li>
+                    <li><a href="#committee" data-page="committee">Committee</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="https://sites.google.com/view/aiide2026/home" target="_blank">AIIDE 2026</a></li>
+                    <li><a href="https://easychair.org/conferences/?conf=aiide26" target="_blank">EasyChair Submissions</a></li>
+                    <li><a href="https://ceur-ws.org/" target="_blank">CEUR-WS Proceedings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:samuel.m.shields@gmail.com">samuel.m.shields@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 WAGD Organizing Committee. All rights reserved.</p>
+            <p>WAGD is co-located with <a href="https://sites.google.com/view/aiide2026/home" target="_blank">AIIDE 2026</a>. In-person attendance is required for participation.</p>
+        </div>
+    </footer>
+
     <script src="js/app.js"></script>
 </body>
 </html>

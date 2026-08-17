@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const pageLinks = document.querySelectorAll('[data-page]');
   const navLinks = document.querySelectorAll('.nav-link-text');
   const pages = document.querySelectorAll('.page');
   const headerImages = [
@@ -80,11 +81,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Update URL hash without jumping
-    history.pushState(null, null, `#${pageId}`);
+    // Update URL hash without jumping (guarded: some contexts, e.g. file://,
+    // can throw on history manipulation)
+    try {
+      history.pushState(null, null, `#${pageId}`);
+    } catch (err) { /* non-critical */ }
+
+    // Start the new page from the top
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }
 
-  navLinks.forEach(link => {
+  pageLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const pageId = link.getAttribute('data-page');
