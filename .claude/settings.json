@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh-keygen -t ed25519 -N \"\" -f wagd_ci_key -C \"gh-actions-wagd\" -q)",
+      "Bash(curl -s \"https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=dZv-vRrnHDA&format=json\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(dig +short A wagd.site)",
+      "Bash(pkill -f \"http.server 8899\")"
+    ]
+  }
+}
