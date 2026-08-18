@@ -1,0 +1,24 @@
+# Auto-deploy to the droplet on push (see smshields/shields_pipeline).
+# Static site: deploy.sh wagd is pull-only — Caddy serves /opt/AIIDE-2026-WAGD.
+# Requires repo secrets DEPLOY_HOST and DEPLOY_SSH_KEY.
+
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+env:
+  APP_NAME: wagd
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: deploy
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: /opt/shields_pipeline/scripts/deploy.sh ${{ env.APP_NAME }}
