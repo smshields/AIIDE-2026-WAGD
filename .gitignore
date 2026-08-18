@@ -32,3 +32,6 @@ yarn-error.log*
 
 # Project specific
 content.txt
+
+# Claude Code local session settings
+.claude/
