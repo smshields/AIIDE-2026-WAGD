@@ -89,6 +89,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Start the new page from the top
     window.scrollTo({ top: 0, behavior: 'instant' });
+
+    countPageView(pageId);
+  }
+
+  // Sections are swapped client-side, so GoatCounter's own load-time hit only
+  // ever records the entry page. Count each subsequent section as its own view.
+  let countedInitialView = false;
+  function countPageView(pageId) {
+    if (!countedInitialView) {
+      countedInitialView = true; // GoatCounter's script already counts this one
+      return;
+    }
+    const gc = window.goatcounter;
+    if (!gc || typeof gc.count !== 'function') return;
+    gc.count({
+      path: `${location.host}/#${pageId}`,
+      title: document.title,
+      event: false
+    });
   }
 
   pageLinks.forEach(link => {

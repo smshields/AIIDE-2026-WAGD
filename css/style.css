@@ -306,7 +306,29 @@ a.nav-title-link {
   text-align: center;
   color: var(--text-muted);
   font-size: 0.85em;
-  margin: 0 0 28px 0;
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 auto 28px auto;
+  text-wrap: balance;
+}
+
+.subtitle-line {
+  display: block;
+}
+
+.subtitle-highlight,
+.subtitle-nb {
+  white-space: nowrap;
+}
+
+.subtitle-highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.subtitle-sep {
+  color: var(--border-strong);
+  padding: 0 2px;
 }
 
 h2 {
