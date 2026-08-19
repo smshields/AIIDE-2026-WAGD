@@ -680,36 +680,6 @@ h2::before {
   }
 }
 
-/* Keynote placeholder */
-.keynote-tba {
-  text-align: center;
-  padding: 48px 24px;
-}
-
-.keynote-tba .tba-keys {
-  width: 120px;
-  margin: 0 auto 18px auto;
-  opacity: 0.9;
-}
-
-.keynote-tba .tba-keys img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.keynote-tba h3 {
-  font-size: 24px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin: 0 0 8px 0;
-}
-
-.keynote-tba p {
-  color: var(--text-muted);
-  max-width: 520px;
-  margin: 0 auto;
-}
 
 /* --------------------------------------------------------------------------
    Footer
